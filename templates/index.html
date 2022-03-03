@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <h2>Home pagesss</h2>
+    <a href="/profile">Profile Page</a>
+    <a href="{{ url_for('hello_there') }}">Profile Page2</a> -->
+    <ul>
+      {% for name in list_names %} {% if name != 'name4' %}
+      <li>{{ name }}</li>
+      {% endif %} {% endfor %}
+    </ul>
+    <form action="profile" method="post">
+      <input type="text" name="name" placeholder="Enter your name" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
