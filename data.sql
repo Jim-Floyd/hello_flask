@@ -1,0 +1,1 @@
+CREATE TABLE User (id integer primary key autoincrement,name text not null,surname text not null,age integer not null)
